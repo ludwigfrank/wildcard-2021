@@ -83,16 +83,16 @@ const Header = ({ data = {}, isTransparent, onSetup = () => {} }) => {
               <div className="logo">
                 {router.pathname === '/' ? (
                   <button
-                    className="logo--link"
+                    className="bg-transparent p-2"
                     aria-label="Go Home"
                     onClick={() => window.scrollTo(0, 0)}
                   >
-                    <Icon name="Logo" id="header" viewBox="0 0 215 150" />
+                    <Icon name="Logo" className="h-5" id="header" viewBox="0 0 93 16" />
                   </button>
                 ) : (
                   <Link href="/" scroll={false}>
-                    <a className="logo--link" aria-label="Go Home">
-                      <Icon name="Logo" id="header" viewBox="0 0 215 150" />
+                    <a className="bg-transparent p-2" aria-label="Go Home">
+                      <Icon name="Logo" className="h-5" id="header" viewBox="0 0 93 16" />
                     </a>
                   </Link>
                 )}

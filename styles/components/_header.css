@@ -21,7 +21,7 @@ a[href="#content"].skip-link {
     @apply relative z-20 p-1 sm:p-4 bg-pageBG;
 
     .is-overlay & {
-      @apply bg-transparent transition-colors duration-300;
+      @apply bg-black bg-opacity-5 transition-colors duration-300;
     }
 
     .has-bg & {
