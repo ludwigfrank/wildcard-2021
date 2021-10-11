@@ -296,6 +296,7 @@ export default async function send(req, res) {
   const result = await stx.commit()
 
   console.info('Sync complete!')
+
   res.statusCode = 200
   res.json(JSON.stringify(result))
 }
