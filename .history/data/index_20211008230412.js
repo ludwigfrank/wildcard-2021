@@ -74,13 +74,12 @@ export async function getProduct(slug, preview) {
   `
 
   const data = await getSanityClient(preview).fetch(query)
-    console.log(data)
+
   return data
 }
 
 // Fetch a specific collection with our global data
 export async function getCollection(slug, preview) {
-  console.log(slug)
   const query = `
     {
       "page": *[_type == "collection" && slug.current == "${slug}"] | order(_updatedAt desc)[0]{

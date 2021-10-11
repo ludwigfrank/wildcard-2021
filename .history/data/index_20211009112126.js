@@ -74,7 +74,7 @@ export async function getProduct(slug, preview) {
   `
 
   const data = await getSanityClient(preview).fetch(query)
-    console.log(data)
+
   return data
 }
 

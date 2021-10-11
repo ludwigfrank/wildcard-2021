@@ -50,7 +50,7 @@ const ShopifyAction = props => {
   const [isSyncing, setIsSyncing] = useState(false)
 
   const toast = useToast()
-  console.log(props)
+
   return {
     disabled: !props.published?.productID,
     label: isSyncing ? 'Syncing...' : 'Sync images to Shopify',

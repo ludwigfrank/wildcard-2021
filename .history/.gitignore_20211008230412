@@ -71,4 +71,4 @@ yarn.lock
 .yarn-integrity
 
 # Secrets
-# .env*
+.env*

@@ -45,8 +45,7 @@ export async function getStaticProps({ preview, previewData }) {
     }
   )
 
-
-  console.log(pageData.site.productCounts)
+  console.log(pageData)
   return {
     props: {
       data: pageData,

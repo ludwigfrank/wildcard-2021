@@ -32,7 +32,6 @@ export default async function send(req, res) {
   })
     .then((response) => {
       if (response.data?.product) {
-        console.log(product + "name")
         return response.data.product
       } else {
         return null
